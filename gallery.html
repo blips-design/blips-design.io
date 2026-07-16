@@ -1,1 +1,67 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Book Haven</title><link rel='stylesheet' href='css/styles.css'></head><body><header><h1>Book Haven Bookstore</h1><nav><a href='index.html'>Home</a><a href='gallery.html'>Gallery</a><a href='about.html'>About</a><a href='community.html'>Community</a></nav></header><main><section class='hero'><h2>Discover Your Next Great Read</h2><p>Books, magazines, journals, and office supplies.</p></section><section><h2>Promos</h2><p>Buy 2 books get 1 free.</p></section></main><footer><input placeholder='Newsletter Email'><button>Subscribe</button></footer></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gallery</title>
+">
+</head>
+<body>
+
+<header>
+<h1>Book Haven Gallery</h1>
+<nav>
+">Home</a>
+gallery.html
+.html">About Us</a>
+community.html
+</nav>
+</header>
+
+<button id="viewCart">View Cart</button>
+
+<table>
+<tr>
+<th>Image</th>
+<th>Item</th>
+<th>Description</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>images/book1.jpg"></td>
+<td>Mystery Novel</td>
+<td>Bestselling mystery title.</td>
+<td><button onclick="addToCart('Mystery Novel')">Add to Cart</button></td>
+</tr>
+
+<tr>
+<td>images/book2.jpg</td>
+<td>Journal</td>
+<td>Premium writing journal.</td>
+<td><button onclick="addToCart('Journal')">Add to Cart</button></td>
+</tr>
+
+<tr>
+<td>images/book3.jpg</td>
+<td>Magazine</td>
+<td>Monthly literary magazine.</td>
+<td><button onclick="addToCart('Magazine')">Add to Cart</button></td>
+</tr>
+
+</table>
+
+<div id="cartModal" class="modal">
+    <div class="modal-content">
+        <h2>Shopping Cart</h2>
+        <ul id="cartItems"></ul>
+
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="processOrder()">Process Order</button>
+        <button onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+js/cart.jsscript>
+
+</body>
+</html>
