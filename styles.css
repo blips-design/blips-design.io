@@ -1,1 +1,73 @@
-body{font-family:Arial;margin:0}header{background:#2E4057;color:#fff;padding:1rem}nav a{color:#fff;margin:0 10px}.hero{padding:40px;background:#F7B3CC}
+:root{
+    --blue:#2E4057;
+    --orange:#EE583F;
+    --rose:#F7B3CC;
+    --gold:#C7B65E;
+    --white:#FFF7EE;
+}
+
+body{
+    font-family: Georgia, serif;
+    margin:0;
+    background:var(--white);
+    color:var(--blue);
+}
+
+header{
+    background:var(--blue);
+    color:white;
+    padding:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+}
+
+.hero{
+    padding:60px;
+    text-align:center;
+    background:var(--rose);
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:var(--gold);
+    padding:20px;
+    border-radius:10px;
+}
+
+button{
+    background:var(--orange);
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+footer{
+    margin-top:30px;
+    padding:20px;
+    background:var(--blue);
+    color:white;
+}
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.5);
+}
+
+.modal-content{
+    background:white;
+    width:50%;
+    margin:10% auto;
+    padding:20px;
+}
