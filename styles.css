@@ -1,1 +1,8 @@
+:root{
+    --inkwell-blue:#2E4057;
+    --intensity-indigo:#EE583F;
+    --dusty-rose:#F7B3CC;
+    --aged-gold:#C7B65E;
+    --parchment-white:#FFF7EE;
+}
  :root{--blue:#2E4057;--orange:#EE583F;--rose:#F7B3CC;--gold:#C7B65E;--white:#FFF7EE}*{box-sizing:border-box}body{font-family:Georgia,serif;margin:0;background:var(--white);color:var(--blue)}header,footer{background:var(--blue);color:#fff;padding:1rem}nav a{color:#fff;margin:.5rem;text-decoration:none}.hero{padding:80px 20px;text-align:center;background:linear-gradient(var(--rose),var(--white))}.container{max-width:1100px;margin:auto;padding:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}.card{background:#fff;padding:15px;border-radius:10px;box-shadow:0 2px 8px #0002}.btn{background:var(--orange);color:#fff;border:0;padding:10px 15px}.product{height:140px;background:var(--gold);display:flex;align-items:center;justify-content:center}.modal{display:none;position:fixed;inset:0;background:#0008}.content{background:#fff;width:60%;margin:10% auto;padding:20px}input,textarea{width:100%;padding:10px;margin:8px 0}
