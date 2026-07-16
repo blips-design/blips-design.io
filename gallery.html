@@ -1,1 +1,121 @@
-<html><head><link rel='stylesheet' href='css/styles.css'><script src='js/cart.js'></script></head><body><header><h1>📚 Book Haven Bookstore</h1><nav><a href='index.html'>Home</a><a href='gallery.html'>Gallery</a><a href='about.html'>About</a><a href='community.html'>Community</a></nav></header><div class='container'><button class='btn' onclick='openCart()'>View Cart</button><div class='grid'><div class='card'><div class='product'>Mystery Novel</div><button class='btn' onclick="addToCart('Mystery Novel')">Add to Cart</button></div><div class='card'><div class='product'>Journal</div><button class='btn' onclick="addToCart('Journal')">Add to Cart</button></div><div class='card'><div class='product'>Magazine</div><button class='btn' onclick="addToCart('Magazine')">Add to Cart</button></div></div></div><div id='cartModal' class='modal'><div class='content'><ul id='cartItems'></ul><button onclick='clearCart()'>Clear Cart</button><button onclick='processOrder()'>Process Order</button><button onclick='closeCart()'>Close</button></div></div><footer><p>Subscribe to our newsletter</p><input placeholder='Email'><p>Facebook | Instagram | X</p></footer></body></html>
+<main class="container">
+
+    <h2>Book Haven Product Gallery</h2>
+
+    <button class="btn cart-btn" onclick="openCart()">
+        🛒 View Cart
+    </button>
+
+    <div class="gallery-grid">
+
+        <!-- BOOKS -->
+
+        <div class="card">
+            <img src="images/Client3_Book1.png"
+                4Ever</h3>
+
+            <p>
+                A heartwarming romance novel filled with humor,
+                friendship, and unexpected love.
+            </p>
+
+            <button class="btn"
+                    onclick="addToCart('Brie Mine 4Ever')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            images/Client3_Book2.png
+
+            <h3>Glory Riders</h3>
+
+            <p>
+                An exciting adventure story about courage,
+                teamwork, and unforgettable journeys.
+            </p>
+
+            <button class="btn"
+                    onclick="addToCart('Glory Riders')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            _Book3.png"
+                 alt="Sorcerer's Shadowed Chronicles"
+                 class="gallery-img">
+
+            <h3>Sorcerer's Shadowed Chronicles</h3>
+
+            <p>
+                A fantasy novel featuring powerful magic,
+                hidden secrets, and epic adventures.
+            </p>
+
+            <button class="btn"
+                    onclick="addToCart('Sorcerers Shadowed Chronicles')">
+                Add to Cart
+            </button>
+        </div>
+
+        <!-- MAGAZINES -->
+
+        <div class="card">
+            _Magazine1.png"
+                 alt="Ball Magazine"
+                 class="gallery-img">
+
+            <h3>Ball Magazine</h3>
+
+            <p>
+                Sports and recreation magazine featuring
+                pickleball trends and athlete stories.
+            </p>
+
+            <button class="btn"
+                    onclick="addToCart('Ball Magazine')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            images/Client3_Magazine2.png
+
+            <h3>Travel Magazine</h3>
+
+            <p>
+                Discover beautiful destinations and travel
+                adventures from around the world.
+            </p>
+
+            <button class="btn"
+                    onclick="addToCart('Travel Magazine')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            images/Client3_Magazine3.png
+
+            <h3>Eat Magazine</h3>
+
+            <p>
+                Explore recipes, restaurant reviews,
+                and culinary inspiration.
+            </p>
+
+            <button class="btn"
+                    onclick="addToCart('Eat Magazine')">
+                Add to Cart
+            </button>
+        </div>
+
+        <!-- MERCHANDISE -->
+
+        <div class="card">
+            images/Client3_Notebook.png
+
+            <h3>Book Haven Notebook</h3>
+
+            <p>
