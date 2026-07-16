@@ -1,65 +1,257 @@
-<div class="gallery-grid">
+<!DOCTYPE html>
+<html lang="en">
 
-    <div class="card">
-        <img src="images/Client3_Book1.png"3>Brie Mine 4Ever</h3>
-        <p>Romance Novel</p>
-        <button class="btn" onclick="addToCart('Brie Mine 4Ever')">Add to Cart</button>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven Gallery</title>
 
-    <div class="card">
-        images/Client3_Book2.png
-        <h3>Glory Riders</h3>
-        <p>Adventure Novel</p>
-        <button class="btn" onclick="addToCart('Glory Riders')">Add to Cart</button>
-    </div>
+    <link yles.css
+    js/cart.jsscript>
 
-    <div class="card">
-        " alt="Sorcerer's Shadowed Chronicles" class="gallery-img">
-        <h3>Sorcerer's Shadowed Chronicles</h3>
-        <p>Fantasy Novel</p>
-        <button class="btn" onclick="addToCart('Sorcerers Shadowed Chronicles')">Add to Cart</button>
-    </div>
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+        }
 
-    <div class="card">
-        agazine1.png" alt="Ball Magazine" class="gallery-img">
-        <h3>Ball Magazine</h3>
-        <p>Sports & Recreation</p>
-        <button class="btn" onclick="addToCart('Ball Magazine')">Add to Cart</button>
-    </div>
+        .gallery-img {
+            width: 100%;
+            height: 280px;
+            object-fit: contain;
+            background: #ffffff;
+            padding: 10px;
+            border-radius: 10px;
+        }
 
-    <div class="card">
-        images/Client3_Magazine2.png" alt="Travel Magazine" class="gallery-img">
-        <h3>Travel Magazine</h3>
-        <p>Travel & Adventure</p>
-        <button class="btn" onclick="addToCart('Travel Magazine')">Add to Cart</button>
-    </div>
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .12);
+            transition: .3s;
+        }
 
-    <div class="card">
-        images/Client3_Magazine3.png
-        <h3>Eat Magazine</h3>
-        <p>Food & Lifestyle</p>
-        <button class="btn" onclick="addToCart('Eat Magazine')">Add to Cart</button>
-    </div>
+        .card:hover {
+            transform: translateY(-8px);
+        }
 
-    <div class="card">
-        ebook.png" alt="Book Haven Notebook" class="gallery-img">
-        <h3>Book Haven Notebook</h3>
-        <p>Premium Hardcover Notebook</p>
-        <button class="btn" onclick="addToCart('Book Haven Notebook')">Add to Cart</button>
-    </div>
+        .card h3 {
+            color: #2E4057;
+            margin: 15px 0;
+        }
 
-    <div class="card">
-        _Stickers.png" alt="Sticker Pack" class="gallery-img">
-        <h3>Read Local Sticker Pack</h3>
-        <p>Bookstore Sticker Collection</p>
-        <button class="btn" onclick="addToCart('Sticker Pack')">Add to Cart</button>
-    </div>
+        .card p {
+            color: #555;
+            min-height: 60px;
+        }
 
-    <div class="card">
-        oteBag.png" alt="Tote Bag" class="gallery-img">
-        <h3>Read Read Read Tote Bag</h3>
-        <p>Reusable Canvas Reading Tote</p>
-        <button class="btn" onclick="addToCart('Tote Bag')">Add to Cart</button>
-    </div>
+        .btn {
+            background: #EE583F;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-</div>
+        .cart-btn {
+            margin-bottom: 20px;
+        }
+
+        header {
+            background: #2E4057;
+            color: white;
+            padding: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        footer {
+            margin-top: 50px;
+            background: #2E4057;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 900px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>📚 Book Haven Bookstore</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            ">Community</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <h2>Book Haven Product Gallery</h2>
+
+        <button class="btn cart-btn" onclick="openCart()">
+            🛒 View Cart
+        </button>
+
+        <div class="gallery-grid">
+
+            <!-- BOOK 1 -->
+            <div class="card">
+                " alt="Brie Mine 4Ever" class="gallery-img">
+
+                <h3>Brie Mine 4Ever</h3>
+
+                <p>A heartwarming romance novel filled with humor and friendship.</p>
+
+                <button class="btn" onclick="addToCart('Brie Mine 4Ever')">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- BOOK 2 -->
+            <div class="card">
+                images/Client3_Book2.png
+
+                <h3>Glory Riders</h3>
+
+                <p>An exciting adventure about teamwork, courage, and discovery.</p>
+
+                <button class="btn" onclick="addToCart('Glory Riders')">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- BOOK 3 -->
+            <div class="card">
+                3_Book3.png" alt="Sorcerers Shadowed Chronicles" class="gallery-img">
+
+                <h3>Sorcerer's Shadowed Chronicles</h3>
+
+                <p>A fantasy adventure featuring magic, mystery, and epic battles.</p>
+
+                <button class="btn" onclick="addToCart('Sorcerers Shadowed Chronicles')">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- MAGAZINE 1 -->
+            <div class="card">
+                images/Client3_Magazine1.png Magazine" class="gallery-img">
+
+                <h3>Ball Magazine</h3>
+
+                <p>Sports and recreation magazine focused on pickleball and fitness.</p>
+
+                <button class="btn" onclick="addToCart('Ball Magazine')">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- MAGAZINE 2 -->
+            <div class="card">
+                images/Client3_Magazine2.png
+
+                <h3>Travel Magazine</h3>
+
+                <p>Explore amazing destinations and travel experiences worldwide.</p>
+
+                <button class="btn" onclick="addToCart('Travel Magazine')">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- MAGAZINE 3 -->
+            <div class="card">
+                /Client3_Magazine3.png" alt="Eat Magazine" class="gallery-img">
+
+                <h3>Eat Magazine</h3>
+
+                <p>Food, recipes, restaurants, and culinary lifestyle inspiration.</p>
+
+                <button class="btn" onclick="addToCart('Eat Magazine')">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- NOTEBOOK -->
+            <div class="card">
+                images/Client3_Notebook.png
+
+                <h3>Book Haven Notebook</h3>
+
+                <p>Premium bookstore notebook perfect for journaling and notes.</p>
+
+                <button class="btn" onclick="addToCart('Book Haven Notebook')">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- STICKERS -->
+            <div class="card">
+                images/Client3_Stickers.png
+
+                <h3>Read Local Sticker Pack</h3>
+
+                <p>Fun bookstore-themed stickers for journals, laptops, and planners.</p>
+
+                <button class="btn" onclick="addToCart('Sticker Pack')">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- TOTE BAG -->
+            <div class="card">
+                oteBag.png" alt="Read Tote Bag" class="gallery-img">
+
+                <h3>Read Read Read Tote Bag</h3>
+
+                <p>Reusable canvas tote bag designed for carrying books and essentials.</p>
+
+                <button class="btn" onclick="addToCart('Read Tote Bag')">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Subscribe to our newsletter</p>
+
+        <input type="email" placeholder="Enter your email">
+
+        <button class="btn">Subscribe</button>
+
+        <p>Facebook | Instagram | X</p>
+
+        <p>&copy; 2025 Book Haven Bookstore</p>
+    </footer>
+
+</body>
+</html>
