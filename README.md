@@ -1,19 +1,3 @@
-book-haven/
-│
-├── index.html
-├── gallery.html
-├── about.html
-├── community.html
-│
-├── css/
-│   └── styles.css
-│
-├── js/
-│   ├── cart.js
-│   └── form.js
-│
-└── images/
-    ├── logo.png
-    ├── book1.jpg
-    ├── book2.jpg
-    └── book3.jpg
+[README.md](https://github.com/user-attachments/files/30072220/README.md)
+# Book Haven Bookstore
+GitHub Pages ready bookstore website. Upload all files to a GitHub repo and enable Pages.
