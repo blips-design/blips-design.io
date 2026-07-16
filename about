@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About Us</title>
+">
+</head>
+<body>
+
+<header>
+<h1>About Book Haven</h1>
+</header>
+
+<section>
+    <h2>Business Information</h2>
+
+    <p>
+        Book Haven Bookstore is a local bookstore serving readers,
+        students, and community members.
+    </p>
+
+    <h3>Hours of Operation</h3>
+
+    <ul>
+        <li>Monday-Friday: 9 AM - 8 PM</li>
+        <li>Saturday: 10 AM - 6 PM</li>
+        <li>Sunday: 11 AM - 5 PM</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Feedback & Custom Orders</h2>
+
+    <form id="feedbackForm">
+        <input type="text" id="name" placeholder="Name" required>
+
+        <input type="email" id="email" placeholder="Email" required>
+
+        <textarea id="message"
+                  placeholder="Feedback or custom order"
+                  required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+js/form.js
+
+</body>
+</html>
